@@ -32,8 +32,8 @@ public class CopyVideoUrlPatch {
             }
 
             //Utils.setClipboard(builder.toString());
-            Utils.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.toString())));
-
+            //Utils.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.toString())));
+            Utils.openUri(builder.toString());
             // Do not show a toast if using Android 13+ as it shows it's own toast.
             // But if the user copied with a timestamp then show a toast.
             // Unfortunately this will show 2 toasts on Android 13+, but no way around this.
