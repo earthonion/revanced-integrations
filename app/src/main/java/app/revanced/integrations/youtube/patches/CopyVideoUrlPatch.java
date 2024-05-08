@@ -3,7 +3,8 @@ package app.revanced.integrations.youtube.patches;
 import static app.revanced.integrations.shared.StringRef.str;
 
 import android.os.Build;
-
+import android.net.Uri;
+import android.content.Intent;
 import app.revanced.integrations.shared.Logger;
 import app.revanced.integrations.shared.Utils;
 
@@ -31,7 +32,7 @@ public class CopyVideoUrlPatch {
             }
 
             //Utils.setClipboard(builder.toString());
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.toString())));
+            Utils.getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(builder.toString())));
 
             // Do not show a toast if using Android 13+ as it shows it's own toast.
             // But if the user copied with a timestamp then show a toast.
