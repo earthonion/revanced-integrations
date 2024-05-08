@@ -249,7 +249,13 @@ public class Utils {
         context.startActivity(mainIntent);
         System.exit(0);
     }
+  
+    public static void openUri(String uri){
+        context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(uri)));
+      
+    }
 
+  
     public static Context getContext() {
         if (context == null) {
             Logger.initializationException(Utils.class, "Context is null, returning null!",  null);
