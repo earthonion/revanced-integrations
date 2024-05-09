@@ -53,7 +53,7 @@ jobs:
       - name: List directory contents
         run: ls -la app
       - name: Tree
-        run: tree
+        run: tree .
       - name: Upload APK to release
         uses: svenstaro/upload-release-action@v2
         with:
