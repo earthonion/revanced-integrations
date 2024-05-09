@@ -251,7 +251,7 @@ public class Utils {
         System.exit(0);
     }
   
-    public static void openUri(String uri){
+    public static void openUri(Context context, String uri){
 
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
