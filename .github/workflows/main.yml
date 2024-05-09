@@ -47,7 +47,11 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
           fingerprint: ${{ env.GPG_FINGERPRINT }}
           
-      
+      - name: Print working directory
+        run: pwd
+
+      - name: List directory contents
+        run: ls -la
         
       - name: Upload APK to release
         uses: svenstaro/upload-release-action@v2
