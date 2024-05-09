@@ -51,7 +51,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./outputs/apk/release/*
-          release_name: RI
+          file: /*
+          release_name: Release
           file_glob: true
           overwrite: true
