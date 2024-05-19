@@ -1,4 +1,10 @@
-# 🔩 ReVanced Integrations  
+# 🔩 ReVanced rehab mode
+
+## buffering bug:
+
+kinda a hacky way to circumvent the buffering bug. clicking on a video (should) open the video externally.
+
+eg. newpipe, libretube 
 
 The official ReVanced Integrations containing classes to be merged by ReVanced Patcher.
 
