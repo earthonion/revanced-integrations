@@ -1,3 +1,13 @@
+## [1.0.4](https://github.com/earthonion/revanced-integrations/compare/v1.0.3...v1.0.4) (2024-05-19)
+
+
+### Bug Fixes
+
+* semicolon 🙄 ([a87e1e3](https://github.com/earthonion/revanced-integrations/commit/a87e1e38e3aa4c549dd94a73974b4826a464c3e9))
+* Update VideoInformation.java ([7e6d7b3](https://github.com/earthonion/revanced-integrations/commit/7e6d7b3823476517978e9a33f92591524e00c902))
+* Update VideoInformation.java ([406608e](https://github.com/earthonion/revanced-integrations/commit/406608eec9d6354e374023fa9930772fe53693f9))
+* Update VideoInformation.java ([5ed9796](https://github.com/earthonion/revanced-integrations/commit/5ed979670ae23dbc008b3666338868a21e9e4997))
+
 ## [1.0.3](https://github.com/earthonion/revanced-integrations/compare/v1.0.2...v1.0.3) (2024-05-19)
 
 
