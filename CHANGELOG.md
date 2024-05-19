@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/earthonion/revanced-integrations/compare/v1.0.4...v1.0.5) (2024-05-19)
+
+
+### Bug Fixes
+
+* logging Update Utils.java ([ca3a089](https://github.com/earthonion/revanced-integrations/commit/ca3a089720bfde754c2e20e60bf56d28aa9da18b))
+
 ## [1.0.4](https://github.com/earthonion/revanced-integrations/compare/v1.0.3...v1.0.4) (2024-05-19)
 
 
