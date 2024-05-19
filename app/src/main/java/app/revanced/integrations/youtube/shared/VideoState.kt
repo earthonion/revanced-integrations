@@ -2,7 +2,6 @@ package app.revanced.integrations.youtube.shared
 
 
 
-import app.revanced.integrations.shared.Utils;
 import app.revanced.integrations.shared.Logger
 import app.revanced.integrations.youtube.patches.VideoInformation
 import app.revanced.integrations.youtube.patches.CopyVideoUrlPatch;
@@ -30,17 +29,12 @@ enum class VideoState {
         @JvmStatic
         fun setFromString(enumName: String) {
             val state = nameToVideoState[enumName]
-            val videoId = VideoInformation.getVideoId()
-            val videoUrl = "https://youtu.be/$videoId"
-        
+            
             if (state == null) {
                 Logger.printException { "Unknown VideoState encountered: $enumName" }
             } else if (currentVideoState != state) {
                 Logger.printDebug { "VideoState changed to: $state" }
-                if (enumName == "NEW") {
-                    Logger.printDebug {"VideoUrl changed to: $videoUrl"}
-                    Utils.openUri(Utils.getContext(),videoUrl);
-                }
+            
 
                 currentVideoState = state
             }
