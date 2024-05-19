@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/earthonion/revanced-integrations/compare/v1.0.2...v1.0.3) (2024-05-19)
+
+
+### Bug Fixes
+
+* logging videourl ([05ca91e](https://github.com/earthonion/revanced-integrations/commit/05ca91e89d191a1e7deff01f4fd7a551c0a9fc58))
+
 ## [1.0.2](https://github.com/earthonion/revanced-integrations/compare/v1.0.1...v1.0.2) (2024-05-19)
 
 
