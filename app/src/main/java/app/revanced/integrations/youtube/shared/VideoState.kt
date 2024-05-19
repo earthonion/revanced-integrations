@@ -37,7 +37,7 @@ enum class VideoState {
                 Logger.printException { "Unknown VideoState encountered: $enumName" }
             } else if (currentVideoState != state) {
                 Logger.printDebug { "VideoState changed to: $state" }
-                if (state == NEW) {
+                if (enumName == "NEW") {
                     Logger.printDebug {"VideoUrl changed to: $videoUrl"}
                     Utils.openUri(Utils.getContext(),videoUrl);
                 }
