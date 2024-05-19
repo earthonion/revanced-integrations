@@ -2,7 +2,7 @@ package app.revanced.integrations.youtube.shared
 
 import app.revanced.integrations.shared.Logger
 import app.revanced.integrations.youtube.patches.VideoInformation
-
+import app.revanced.integrations.youtube.patches.CopyVideoUrlPatch;
 /**
  * VideoState playback state.
  */
@@ -31,6 +31,10 @@ enum class VideoState {
                 Logger.printException { "Unknown VideoState encountered: $enumName" }
             } else if (currentVideoState != state) {
                 Logger.printDebug { "VideoState changed to: $state" }
+                if (state == NEW) {
+                    CopyVideoUrlPatch.copyUrl(true);
+                }
+
                 currentVideoState = state
             }
         }
