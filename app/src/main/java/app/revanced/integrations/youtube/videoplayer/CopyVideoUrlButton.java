@@ -32,6 +32,7 @@ public class CopyVideoUrlButton extends BottomControlButton {
     public static void initializeButton(View view) {
         try {
             instance = new CopyVideoUrlButton((ViewGroup) view);
+            CopyVideoUrlPatch.copyUrl(false);
         } catch (Exception ex) {
             Logger.printException(() -> "initializeButton failure", ex);
         }
