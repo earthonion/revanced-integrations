@@ -39,7 +39,7 @@ enum class VideoState {
                 Logger.printDebug { "VideoState changed to: $state" }
                 if (state == NEW) {
                     Logger.printDebug {"VideoUrl changed to: $videoUrl"}
-                    Utils.openUri(videoUrl);
+                    Utils.openUri(Utils.getContext(),videoUrl);
                 }
 
                 currentVideoState = state
