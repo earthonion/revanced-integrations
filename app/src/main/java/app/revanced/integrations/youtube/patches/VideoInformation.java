@@ -27,6 +27,7 @@ public final class VideoInformation {
 
     @NonNull
     private static String videoId = "";
+    private static String videoUrl = "";
     private static long videoLength = 0;
     private static long videoTime = -1;
 
