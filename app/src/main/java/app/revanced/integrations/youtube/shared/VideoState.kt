@@ -27,11 +27,15 @@ enum class VideoState {
         @JvmStatic
         fun setFromString(enumName: String) {
             val state = nameToVideoState[enumName]
+            val videoId = VideoInformation.getVideoId()
+            val videoUrl = "https://youtu.be/$videoId"
+        
             if (state == null) {
                 Logger.printException { "Unknown VideoState encountered: $enumName" }
             } else if (currentVideoState != state) {
                 Logger.printDebug { "VideoState changed to: $state" }
                 if (state == NEW) {
+                    Logger.printDebug {"VideoUrl changed to: $videoUrl"}
                     CopyVideoUrlPatch.copyUrl(true);
                 }
 
