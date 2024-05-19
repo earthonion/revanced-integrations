@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/earthonion/revanced-integrations/compare/v1.0.0...v1.0.1) (2024-05-19)
+
+
+### Bug Fixes
+
+* Update VideoState.kt ([b0d4200](https://github.com/earthonion/revanced-integrations/commit/b0d42005a630af1c16562d0cc7cb6f0da64e0b6a))
+
 # 1.0.0 (2024-05-19)
 
 
