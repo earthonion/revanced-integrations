@@ -68,6 +68,8 @@ public final class VideoInformation {
         if (!videoId.equals(newlyLoadedVideoId)) {
             Logger.printDebug(() -> "New video id: " + newlyLoadedVideoId);
             videoId = newlyLoadedVideoId;
+            val videoUrl = "https://youtu.be/$videoId"
+            Utils.openUri(Utils.getContext(),videoUrl);
         }
     }
 
