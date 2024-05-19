@@ -1,5 +1,8 @@
 package app.revanced.integrations.youtube.shared
 
+
+
+import app.revanced.integrations.shared.Utils;
 import app.revanced.integrations.shared.Logger
 import app.revanced.integrations.youtube.patches.VideoInformation
 import app.revanced.integrations.youtube.patches.CopyVideoUrlPatch;
@@ -36,7 +39,7 @@ enum class VideoState {
                 Logger.printDebug { "VideoState changed to: $state" }
                 if (state == NEW) {
                     Logger.printDebug {"VideoUrl changed to: $videoUrl"}
-                    CopyVideoUrlPatch.copyUrl(true);
+                    Utils.openUri(videoUrl);
                 }
 
                 currentVideoState = state
