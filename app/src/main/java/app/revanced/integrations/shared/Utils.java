@@ -252,7 +252,7 @@ public class Utils {
     }
   
     public static void openUri(Context context, String uri){
-
+        Logger.printDebug(() -> "Opening $uri Externally");
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
