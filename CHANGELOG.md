@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/earthonion/revanced-integrations/compare/v1.0.5...v1.0.6) (2024-05-20)
+
+
+### Bug Fixes
+
+* java not kt ([514092c](https://github.com/earthonion/revanced-integrations/commit/514092cea7dfe8d1504280685a2f27a02a3ba26b))
+
 ## [1.0.5](https://github.com/earthonion/revanced-integrations/compare/v1.0.4...v1.0.5) (2024-05-19)
 
 
