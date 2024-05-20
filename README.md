@@ -1,4 +1,4 @@
-# 🔩 ReVanced rehab mode
+# 🔩 YouTube rehab mode
 
 ## buffering bug:
 
