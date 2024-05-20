@@ -6,11 +6,9 @@ kinda a hacky way to circumvent the buffering bug. clicking on a video (should) 
 
 eg. newpipe, libretube 
 
-The official ReVanced Integrations containing classes to be merged by ReVanced Patcher.
+## ❓ How to set up:
 
-## ❓ How to use debugging:
+in the revanced manager app go to Settings >  Check "Use Alternative Sources" then under Alternate Sources edit the "Integrations organization" to "earthonion".
 
-- Usage on Windows: ```adb logcat | findstr "revanced" > log.txt```
-- Usage on Linux: ```adb logcat | grep --line-buffered "revanced" > log.txt```
-  
-This will write the log to a file called log.txt which you can view then.
+then go to patch Youtube as you normally would.
+
